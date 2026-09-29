@@ -56,5 +56,18 @@ function handleOpenEditModal() {
   openModal(editPopup);
 }
 
-editButton.addEventListener("click", handleOpenEditModal);
+const formElement = editPopup.querySelector(".popup__form");
 
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+
+  let nameInput = formElement.querySelector(".popup__input_type_name");
+  let aboutInput = formElement.querySelector(".popup__input_type_description");
+
+  profileName.textContent = nameInput.value;
+  profileAbout.textContent = aboutInput.value;
+
+  closeModal(editPopup);
+}
+
+formElement.addEventListener("submit", handleProfileFormSubmit);
