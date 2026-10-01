@@ -56,6 +56,6 @@ Además de presentar contenido visual, la aplicación pone en práctica concepto
 
 ---
 
-¿Quieres conocer más sobre el proyecto? Explora el código fuente para revisar cómo se implementaron las interacciones, los estilos y la estructura de la aplicación en https://github.com/Lore-Cas/web_project_portfolio_es.git
+¿Quieres conocer más sobre el proyecto? Explora el código fuente para revisar cómo se implementaron las interacciones, los estilos y la estructura de la aplicación en https://github.com/Lore-Cas/web_project_around_es.git
 
 ¿Quieres ver como funciona el proyecto? Entra a https://lore-cas.github.io/web_project_around_es/
