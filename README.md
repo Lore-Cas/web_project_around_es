@@ -1,41 +1,61 @@
 # Tripleten web_project_around_es
 
-¡Bienvenido/a a ¡Alrededor de los EE.UU.! Este proyecto es una aplicación enfocada en ofrecer una experiencia moderna, interactiva y adaptable a diferentes dispositivos.
+## Around the U.S. (¡Alrededor de los EE.UU.!)
 
-Descripción del proyecto
+¡Bienvenido/a a ¡Alrededor de los EE.UU.! Este proyecto es una aplicación web interactiva desarrollada con HTML, CSS y JavaScript, enfocada en la presentación de un perfil personal y una colección de lugares mediante tarjetas dinámicas, la interfaz está diseñada para ofrecer una experiencia moderna, interactiva y adaptable a diferentes dispositivos.
 
-Este proyecto consiste en una aplicación web donde los usuarios pueden visualizar y actualizar información de su perfil de manera sencilla e intuitiva. La interfaz está diseñada para facilitar la interacción mediante componentes dinámicos y ventanas modales.
+## Descripción del proyecto
 
-¿Qué encontrarás aquí?
+¡Alrededor de los EE.UU.! es una página web donde los usuarios pueden visualizar y actualizar información de su perfil de manera sencilla e intuitiva. El proyecto implementa interacciones mediante JavaScript para modificar el perfil, agregar nuevos lugares, eliminar tarjetas y gestionar los "me gusta".
+
+## ¿Qué encontrarás aquí?
 
 Perfil de usuario: Una sección dedicada a mostrar la información principal del usuario.
-Edición de perfil: Permite modificar los datos del perfil mediante un formulario.
+Galería de tarjetas: Una colección de lugares presentada mediante tarjetas visuales.
+Edición de perfil: Una ventana emergente permite modificar los datos del perfil mediante un formulario.
+Agregar nuevos lugares: Un formulario permite crear nuevas tarjetas para incorporarlas a la galería.
+Eliminar tarjetas: Cada tarjeta dispone de una acción para eliminarla de la galería.
+Sistema de "Me gusta": Las tarjetas incluyen una interacción para marcar o quitar un "me gusta".
+Ventanas emergentes (popups): Formularios y acciones se muestran mediante modales reutilizables.
+Diseño responsivo: La interfaz se adapta a diferentes tamaños de pantalla.
+Recursos visuales personalizados: El proyecto incluye imágenes, iconos y fuentes locales para mantener una apariencia coherente.
 Interfaz interactiva: Los elementos de la página responden a las acciones del usuario de manera dinámica.
-Diseño adaptable: La interfaz está preparada para visualizarse correctamente en diferentes tamaños de pantalla.
 
-Características técnicas
+## Características técnicas
 
-Formularios controlados para gestionar los datos introducidos por el usuario.
-Modales interactivos para editar información sin abandonar la página.
-Actualización dinámica del DOM mediante React.
-CSS para la estructura visual, estilos y adaptación a diferentes dispositivos.
-Diseño responsivo para mejorar la experiencia en dispositivos móviles, tablets y escritorio.
+HTML5 para definir la estructura semántica de la aplicación.
+CSS3 para estilos, distribución, componentes y diseño responsivo.
+JavaScript para gestionar la interacción y el comportamiento dinámico de la página.
+Manipulación del DOM para actualizar el contenido del perfil y de las tarjetas sin recargar la página.
+Eventos de usuario para gestionar formularios, botones, likes y acciones sobre las tarjetas.
+Ventanas modales reutilizables para editar información y crear nuevos contenidos.
+Componentes visuales separados mediante hojas de estilo organizadas por bloques.
+Fuentes Inter incluidas localmente para mantener consistencia visual.
+Normalización de estilos mediante una hoja de estilos base.
+Diseño adaptable para dispositivos móviles, tablets y escritorio.
 
-Tecnologías principales
+## Tecnologías principales
+
+HTML5
+CSS3
 JavaScript
-HTML
-CSS
+DOM API
+CSS Flexbox
+CSS Grid
+Diseño responsivo
+Inter
+SVG
 Git
 GitHub
 
-Objetivo del proyecto
+## ¿Por qué este proyecto es diferente?
 
-El objetivo principal de este proyecto es poner en práctica conceptos fundamentales del desarrollo web moderno, especialmente el trabajo con componentes, eventos, formularios y actualización dinámica de información.
+Este proyecto demuestra cómo construir una experiencia web interactiva utilizando tecnologías fundamentales del desarrollo frontend, sin depender de un framework. La separación de estilos, recursos y lógica permite mantener el código organizado y facilita la incorporación de nuevas funcionalidades.
 
-Además, busca ofrecer una experiencia de usuario sencilla e intuitiva, donde las modificaciones realizadas en el perfil puedan visualizarse inmediatamente.
+Además de presentar contenido visual, la aplicación pone en práctica conceptos esenciales como manipulación del DOM, gestión de eventos, formularios, componentes reutilizables, ventanas modales y diseño responsivo.
 
-Conclusión
+---
 
-Este proyecto representa una aplicación web interactiva en la que se combinan estructura, estilos y lógica de programación para crear una experiencia funcional.
+¿Quieres conocer más sobre el proyecto? Explora el código fuente para revisar cómo se implementaron las interacciones, los estilos y la estructura de la aplicación en https://github.com/Lore-Cas/web_project_portfolio_es.git
 
-La implementación de la edición de perfil mediante un modal permite practicar conceptos importantes como el manejo de eventos, formularios, estados y actualización dinámica de la interfaz, elementos fundamentales para el desarrollo de aplicaciones web modernas.
+¿Quieres ver como funciona el proyecto? Entra a https://lore-cas.github.io/web_project_around_es/
