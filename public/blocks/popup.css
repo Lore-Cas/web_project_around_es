@@ -11,7 +11,7 @@
   display: none;
   z-index: 10;
   box-sizing: border-box;
-  padding: 50px 20px 35px;
+  padding: 55px 20px 45px;
   overflow-y: auto;
 }
 
@@ -182,15 +182,16 @@
 
   .popup__close {
     right: 7px;
-    top: -30px;
-    width: 20px;
-    height: 20px;
+    top: -32px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
   }
 
   .popup__content {
     width: 100%;
-    max-width: calc(100% - 19px * 2);
-    margin-top: 8px;
+    max-width: 100%;
+    margin-top: auto;
     padding: 25px 22px;
   }
 

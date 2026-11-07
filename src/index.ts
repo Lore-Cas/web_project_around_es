@@ -42,13 +42,13 @@ cardValidator.enableValidation();
 const editPopup = new PopupWithForm("#edit-popup", (values) => {
   userInfo.setUserInfo({ name: values.name, description: values.description });
   editPopup.close();
-});
+}, () => editValidator.resetValidation());
 const newCardPopup = new PopupWithForm("#new-card-popup", (values) => {
   const data: CardData = { name: values["place-name"], link: values.link };
   const card = new Card(data, "#card-template", (item) => imagePopup.open(item));
   cardsSection.addItem(card.generateCard());
   newCardPopup.close();
-});
+}, () => cardValidator.resetValidation());
 editPopup.setEventListeners();
 newCardPopup.setEventListeners();
 

@@ -5,7 +5,11 @@ export class PopupWithForm extends Popup {
   private readonly form: HTMLFormElement;
   private readonly inputs: HTMLInputElement[];
 
-  constructor(popupSelector: string, private readonly handleFormSubmit: FormSubmitHandler) {
+  constructor(
+    popupSelector: string,
+    private readonly handleFormSubmit: FormSubmitHandler,
+    private readonly resetFormValidation: () => void,
+  ) {
     super(popupSelector);
     const form = this.popup.querySelector<HTMLFormElement>(".popup__form");
     if (!form) throw new Error("No se encontró el formulario del popup.");
@@ -32,5 +36,6 @@ export class PopupWithForm extends Popup {
   public override close(): void {
     super.close();
     this.form.reset();
+    this.resetFormValidation();
   }
 }

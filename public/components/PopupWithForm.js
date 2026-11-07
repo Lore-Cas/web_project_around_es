@@ -1,8 +1,9 @@
 import { Popup } from "./Popup.js";
 export class PopupWithForm extends Popup {
-    constructor(popupSelector, handleFormSubmit) {
+    constructor(popupSelector, handleFormSubmit, resetFormValidation) {
         super(popupSelector);
         this.handleFormSubmit = handleFormSubmit;
+        this.resetFormValidation = resetFormValidation;
         const form = this.popup.querySelector(".popup__form");
         if (!form)
             throw new Error("No se encontró el formulario del popup.");
@@ -27,5 +28,6 @@ export class PopupWithForm extends Popup {
     close() {
         super.close();
         this.form.reset();
+        this.resetFormValidation();
     }
 }

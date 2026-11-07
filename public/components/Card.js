@@ -19,7 +19,8 @@ export class Card {
         const deleteButton = this.element.querySelector(".card__delete-button");
         imageButton?.addEventListener("click", () => this.handleCardClick(this.data));
         likeButton?.addEventListener("click", () => {
-            likeButton.classList.toggle("card__like-button_is-active");
+            const isLiked = likeButton.classList.toggle("card__like-button_is-active");
+            likeButton.setAttribute("aria-pressed", String(isLiked));
         });
         deleteButton?.addEventListener("click", () => this.element.remove());
     }
@@ -34,6 +35,7 @@ export class Card {
         image.src = this.data.link;
         image.alt = `Fotografía de ${this.data.name}`;
         imageButton.setAttribute("aria-label", `Ampliar imagen: ${this.data.name}`);
+        this.element.querySelector(".card__like-button")?.setAttribute("aria-pressed", "false");
         this.setEventListeners();
         return this.element;
     }
