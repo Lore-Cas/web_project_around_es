@@ -11,11 +11,15 @@ const userInfo = new UserInfo({
 });
 const imagePopup = new PopupWithImage("#image-popup");
 imagePopup.setEventListeners();
+// Centraliza la creación de tarjetas para la lista inicial y el formulario.
+const createCard = (data) => {
+    const card = new Card(data, "#card-template", (item) => imagePopup.open(item));
+    return card.generateCard();
+};
 const cardsSection = new Section({
     items: [...initialCards].reverse(),
     renderer: (item) => {
-        const card = new Card(item, "#card-template", (data) => imagePopup.open(data));
-        cardsSection.addItem(card.generateCard());
+        cardsSection.addItem(createCard(item));
     },
 }, ".cards__list");
 // addItem usa prepend; la lista se renderiza invertida para conservar el orden visual.
@@ -37,8 +41,7 @@ const editPopup = new PopupWithForm("#edit-popup", (values) => {
 }, () => editValidator.resetValidation());
 const newCardPopup = new PopupWithForm("#new-card-popup", (values) => {
     const data = { name: values["place-name"], link: values.link };
-    const card = new Card(data, "#card-template", (item) => imagePopup.open(item));
-    cardsSection.addItem(card.generateCard());
+    cardsSection.addItem(createCard(data));
     newCardPopup.close();
 }, () => cardValidator.resetValidation());
 editPopup.setEventListeners();
